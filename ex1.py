@@ -69,11 +69,12 @@ def aleatorio2(hora, horasmes):
 #16
 def tintas(area):
     litros = area/3
-    latas = 0
-	if litros < 18:
-		latas = 1
-	else:
-			
+    latas = litros/18
+	if litros % 18 != 0:
+		latas ++
+	preco = latas*80
+	print 'numero de latas ', latas, ' facada eh ', preco 
 #17
+
 #18
 
